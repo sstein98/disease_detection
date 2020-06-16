@@ -19,11 +19,11 @@
     font-weight: 400;
 }
 
-.images-container {
+/*.images-container {
     display: flex;
     justify-content: space-between;
     max-height: 10px;
-}
+}*/
 
 .card-title {
     font-family: 'Open Sans', sans-serif;
@@ -34,9 +34,41 @@
     margin-left: 10vw;
     margin-right: 10vw;
     width: 20vw; 
+    /*background-image: url('../images/inner_bg.jpg');
+    background-size: 1150px 900px;*/
+    opacity: 0.8;
+}
+
+.upload{
+  margin: 10px;
+  background-color: #FFC34A;
+  border: 1px solid black;
+  opacity: 0.7;
+}
+
+.results{
+  margin: 30px;
+  background-color: #ffffff;   
+ font-family: 'Ubuntu', sans-serif;
+  color: black;
+  border: 1px solid black;
+  opacity: 0.8;
+}
+
+.results h6{
+  text-align: center;
 }
 
 .display-img {
-    max-height: 23vw!important;
-    max-width: 30vw;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5vh;
+    margin-left: 18vw;
+    min-height: 15vh;
+    max-height: 23vw;
+    max-width: 23vw;
+}
+.page{
+    background-image: url('../images/newBG.jpg');
+    background-size: 2000px 1000px;
 }

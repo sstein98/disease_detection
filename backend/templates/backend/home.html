@@ -10,21 +10,36 @@
     <body>
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
             <span class="header">
-                <h3>Disease Detection</h3>
+                <h3>Plant Leaf Disease Detection</h3>
             </span>
         </nav>
+        <div class="page">
         <div class="container">
             <p class="description">Upload an image</p>
             <div class="card-deck mb-3 text-center">
                 <div class="card mb-4 shadow-sm image-box">
                     <img src="{% static 'images/loader.gif' %}" class="card-img-top display-img" id="original" alt="...">
                     <div class="card-body">
-                    <h5 class="card-title">Original Image</h5>
-                    <input type="file" id="fileUpload" onchange="encodeImageFileAsURL(this)" style="display: none;">  
-                    <button type="button" id="btnFileUpload" class="btn btn-lg btn-block btn-outline-primary">Upload</button>
+                    <input type="file" id="fileUpload" onchange="encodeImageFileAsURL(this)" style="display: none;"> 
+                    <div class="upload">
+                       <button type="button" id="btnFileUpload" class="btn btn-lg btn-block btn-outline-primary">Upload</button> 
+                    </div> 
+
+                    <!-- <button  id="resultButton" class="btn btn-lg btn-block btn-outline-primary" onclick="resultButton()">See The Results </button> -->
+                    <br/>
+                    <div class="results">
+                    <h5 class="card-title">Results</h5>
+                    <h6 id="status" >Status: <br/>Tomato_Bacterial_spot</h6>
+                    <h6 id="symptom">Symptoms: <br/>Symptoms of bacterial leaf spot may include black edged lesions, brown spots with yellow halos, or just light and dark areas on the foliage.<br />
+Symptoms of bacterial leaf spot may also appear on the edges of a leaf, where it appears brownish yellow and the tissue dries and breaks off. <br/>The leaves become quite papery and delicate when the bacterial disease attacks the leaf edges.</h6>
+                    <h6 id="prevMeasure">Preventive Measures: <br/>choose disease-free transplants and rotate crops.<br/>
+avoid overhead watering to prevent spreading the bacteria.<br/>
+Remove old vegetable debris in the garden and do not plant new crops where host plants were once growing.</h6>
+                    </div>
                     </div>
                 </div>
               </div>
+          </div>
         </div>
         
 
